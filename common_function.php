@@ -1,11 +1,25 @@
 <?php
-include "connect.php";
-
 function meta(){
+    
     ?>
 <title>Dreams Auto Fibre Glass</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta property="og:image" content="images/logo.png" />
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="800"/>
+        <meta property="og:url" content="https://index.php"/>
+        <meta property="og:type" content="website"/>
+     
+     <meta property="og:title" content="Dreams Auto Fibre Glass"/>
+     
+     <meta property="og:description" content="<?php echo strip_tags("Sane Guruji Trust: Nurturing wisdom, fostering compassion — lighting the path towards a brighter tomorrow with the torch of education and social upliftment.");?>" />
+    <meta name="keyword" content="<?php include "connect.php";
+    $select_keyword=mysqli_query($conn,"SELECT * FROM `keywords` WHERE `is_del`='approved'");
+    while($key=$select_keyword->fetch_object()){$keyword=$key->keyword;
+        ?><?php echo $keyword.',';?><?php }?>">
+    
 <?php    
 }
 ?>
@@ -22,11 +36,8 @@ function css(){
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/magnific-popup.css">
-
-
 <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 <link rel="stylesheet" href="css/jquery.timepicker.css">
-
 <link rel="stylesheet" href="css/flaticon.css">
 <link rel="stylesheet" href="css/style.css">
 <?php    
@@ -41,17 +52,16 @@ function navbar(){
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
 						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+							<a href="tel:+919604367152" class="mr-2"><span class="fa fa-phone mr-1"></span> +91-9604367152</a>
+                            <a href="mailto:dreamsauto@gmail.com"><span class="fa fa-inbox mr-1"></span> dreamsauto58@yahoo.com</a>
+
 						</p>
 					</div>
 					<div class="col-md-6 d-flex justify-content-md-end">
 						<div class="social-media">
 			    		<p class="mb-0 d-flex">
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+			    			<a href="https://www.facebook.com/profile.php?id=61562727981961&mibextid=LQQJ4d" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+			    			<a href="https://www.instagram.com/dreams_auto_fibre_glass?igsh=aG9vaWRiY2JpcDBw&utm_source=qr" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 			    		</p>
 		        </div>
 					</div>
@@ -60,7 +70,7 @@ function navbar(){
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light sticky-top" id="ftco-navbar">
 	    <div class="container">
-	    	<img src="images/logo.png" width="100px" alt="logo">
+	    	<img src="images/logo.png" width="100px" alt="logo"><h3>Dreams Auto Fiber Glass</h3>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
 	      </button>
@@ -70,7 +80,7 @@ function navbar(){
 	        	<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="products.php" class="nav-link">Products</a></li>
 	          <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
-	          
+	          <li class="nav-item"><a href="blog.php" class="nav-link">Blogs</a></li>
 	          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -90,7 +100,7 @@ function section1(){
     	<div class="container">
     		<div class="row d-flex no-gutters">
     			<div class="col-md-5 d-flex">
-    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(images/about_1.jpg);">
+    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(images/factory.jpeg);">
     				</div>
     			</div>
     			<div class="col-md-7 pl-md-5 py-md-5">
@@ -144,14 +154,14 @@ function section2(){
     		<div class="row">
     			<div class="col-md-4 mb-5 mb-md-0 text-center text-md-left ">
     				<h2 class="font-weight-bold" style="color: #fff; font-size: 20px;">We Provide Free Quotation</h2>
-    				<a href="#" class="btn btn-white btn-outline-white">Free Consultation</a>
+    				<a href="contact.php" class="btn btn-white btn-outline-white">Free Consultation</a>
     			</div>
     			<div class="col-md-8">
 						<div class="row">
 		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate ">
 		            <div class="block-16 text-center">
 		              <div class="text ">
-		                <strong class="number text-dark" data-number="50">0</strong>
+		                <strong class="number text-dark" data-number="2000">0</strong>
 		              </div>
 		              <div class="text-grey">
 		              	<span>Customers</span>
@@ -223,9 +233,8 @@ function footer(){
 						<h2 class="footer-heading">Dreams Auto Fibreglass</h2>
 						<p>"Quality and Innovation in Every Fiber." - Dreams Auto Fiberglass</p>
 						<ul class="ftco-footer-social p-0">
-              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=61562727981961&mibextid=LQQJ4d" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/dreams_auto_fibre_glass?igsh=aG9vaWRiY2JpcDBw&utm_source=qr" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
             </ul>
 					</div>
 					
@@ -235,7 +244,7 @@ function footer(){
               <li><a href="index.php" class="py-2 d-block">Home</a></li>
               <li><a href="about.php" class="py-2 d-block">About</a></li>
               <li><a href="products.php" class="py-2 d-block">Products</a></li>
-              <li><a href="gallery.php" class="py-2 d-block">Works</a></li>
+              <li><a href="gallery.php" class="py-2 d-block">Gallery</a></li>
               <li><a href="blog.php" class="py-2 d-block">Blog</a></li>
               <li><a href="contact.php" class="py-2 d-block">Contact</a></li>
             </ul>
@@ -245,8 +254,10 @@ function footer(){
 						<div class="block-23 mb-3">
               <ul>
                 <li><span class="icon fa fa-map"></span><span class="text"> S No. 82/1/1 to 6 Plot No 11 A Datirmala, Behind NMC Schoo, MIDC Ambad, Nashik-422010, Maharashtra, India</span></li>
-                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91-9604367152</span></a></li>
-                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
+                <li><a href="#"><span class="icon fa fa-user"></span><span class="text">Dhiraj Singh(CEO)  9604367152</span></a></li>
+                <li><a href="#"><span class="icon fa fa-user"></span><span class="text">Prathmesh Jadhav   9860764415</span></a></li>
+                
+                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">dreamsauto@gmail.com dreamsauto58@yahoo.com</span></a></li>
               </ul>
             </div>
 					</div>

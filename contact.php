@@ -48,7 +48,7 @@
 				        			<span class="fa fa-phone text-danger"></span>
 				        		</div>
 				        		<div class="text">
-					            <p><span>Phone:</span> <a href="tel://1234567920">+91-9604367152</a></p>
+					            <p><span>Phone:</span></br> <a href="#"><span>9604367152 </span></br><span>9834472307</span></br><span>9860764415</span></a></p>
 					          </div>
 				          </div>
 								</div>
@@ -58,7 +58,7 @@
 				        			<span class="fa fa-paper-plane text-danger"></span>
 				        		</div>
 				        		<div class="text">
-					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+					            <p><span>Email:</span></br> <a href="mailto:dreamsauto@gmail.com"><span>dreamsauto@gmail.com </span></br><span>dreamsauto58@yahoo.com</span></a></p>
 					          </div>
 				          </div>
 								</div>
@@ -77,12 +77,12 @@
 								<div class="col-md-7">
 									<div class="contact-wrap w-100 p-md-5 p-4">
 										<h3 class="mb-4">Contact Us</h3>
-										<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<form method="POST" id="contactForm" action = "insert_cust_query.php" name="contactForm" class="contactForm">
 											<div class="row">
 												<div class="col-md-6">
 													<div class="form-group">
 														<label class="label" for="name">Full Name</label>
-														<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+														<input type="text" class="form-control" name="customer_name" id="name" placeholder="Name">
 													</div>
 												</div>
 												<div class="col-md-6"> 
@@ -93,20 +93,20 @@
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<label class="label" for="subject">Subject</label>
-														<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+														<label class="label" for="phone">Phone</label>
+														<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<label class="label" for="#">Message</label>
+														<label class="label" for="message">Message</label>
 														<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<input type="submit" value="Send Message" class="btn btn-warning">
-														<div class="submitting"></div>
+														<input type="submit" value="submit" name="submit" class="btn btn-warning">
+														
 													</div>
 												</div>
 											</div>
@@ -114,7 +114,7 @@
 									</div>
 								</div>
 								<div class="col-md-5 d-flex align-items-stretch">
-									<div class="info-wrap w-100 p-5 img" style="background-image: url(images/about_1.jpg);">
+									<div class="info-wrap w-100 p-5 img" style="background-image: url(images/factory.jpeg);">
 				          </div>
 								</div>
 							</div>
@@ -124,7 +124,7 @@
 			</div>
 		</section>
 
-		<div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=dreams%20auto%20fibre%20glass+(Dreams%20Auto%20Fibre%20Glass)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
+		<div style="width: 100%"><div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=19%C2%B057'28.8%22N%2073%C2%B044'31.5%22E+(dreams%20auto%20fibre%20glass)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div></div>
 
     <?php 
 	footer(); 
