@@ -28,7 +28,7 @@ if($chec!="")
 			$tt1= $_FILES["photo"]["name"];
 			$image11=date("d-m")."_".rand().str_replace(" ","_",$tt1);
 			move_uploaded_file($_FILES["photo"]["tmp_name"],"product_images/".$image11);
-			$imgup=	$image11;	
+			$imgup=	$image11;
 		}
 
 	
@@ -36,8 +36,6 @@ if($chec!="")
 else
 {
 	$imgup=	$prev_photo;	
-	
-	
 }
 $insert = "UPDATE `product_details` SET `product_name`='$product_name', `color`='$color',`shape`='$shape',`size`='$size',`type`='$type',`material`='$material',`capacity`='$capacity',`usage_of_product`='$usage',`mounted`='$mounted',`description`='$description' ,`photo`='$imgup' WHERE `unique_product_id` = '$unique_id1' and `is_del`= 'approved'";
 
@@ -48,7 +46,7 @@ if(mysqli_query($conn, $insert) == TRUE){
     echo'</script>';
 }
 else
-echo '<script>';
+	echo '<script>';
     echo'alert("Failed to Update...!");';
     echo'window.location="view_all_products.php";';
     echo'</script>';
