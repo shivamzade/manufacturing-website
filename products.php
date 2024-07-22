@@ -30,7 +30,7 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2>Top Categories</h2>
+            <h2>All Categories</h2>
           </div>
         </div>
     		<div class="row">
@@ -61,7 +61,7 @@ while ($r = $result->fetch_object()) {
           <?php } ?>
         </div>
 
-		<p class="text-center py-5"><a href="all_categories.php" class="btn btn-secondary mr-md-4 py-3 px-4">Show All Categories <span class="ion-ios-arrow-forward"></span></a></p>
+		<!--<p class="text-center py-5"><a href="all_categories.php" class="btn btn-secondary mr-md-4 py-3 px-4">Show All Categories <span class="ion-ios-arrow-forward"></span></a></p>-->
     	</div>
 
     </section>
